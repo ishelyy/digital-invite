@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>A DAY of LOVE & JOY!</title>
     <style>
         body {
@@ -14,6 +14,7 @@
             align-items: center;
             min-height: 100vh;
             font-family: sans-serif;
+            flex-direction: column; /* To stack video and audio vertically */
         }
 
         .video-container {
@@ -40,12 +41,21 @@
 </head>
 <body>
 
+    <h1>A DAY of LOVE & JOY!</h1>
+
+    <!-- Your video -->
     <div class="video-container">       
         <video controls autoplay muted playsinline>
-            <source src="A DAY of LOVE & JOY!.mp4" type="video/mp4">
+            <source src="A DAY of LOVE & JOY!.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
     </div>
+
+    <!-- Autoplay music -->
+    <audio autoplay loop>
+        <source src="your-music-file.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+    </audio>
 
 </body>
 </html>
